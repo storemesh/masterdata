@@ -48,8 +48,6 @@ result=md.validate(query=df1['province'], key=df2['province'])
 #5.result 
 
 len(result.input)
-'''
-
 ```
 
 
