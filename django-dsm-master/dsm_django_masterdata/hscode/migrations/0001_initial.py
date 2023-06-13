@@ -11,7 +11,7 @@ def get_hscode(apps, schema_editor):
     bluck = [HScode(**elm) for elm in df.to_dict('records')]
     with transaction.atomic():
         HScode.objects.bulk_create(bluck)
-    print("Import hscode to HScode, Sucessful!")
+    print(f"Import hscode to HScode, Sucessful! => {len(bluck)}")
 
 class Migration(migrations.Migration):
 

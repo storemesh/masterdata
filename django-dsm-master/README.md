@@ -8,6 +8,7 @@ pip install pip install dsm-django-masterdata
 INSTALLED_APPS = [
     ...
     'dsm_django_masterdata.hscode',
+    'dsm_django_masterdata.area',
     ...
 ]
 ```
@@ -20,7 +21,13 @@ python manage.py migrate
 3. check data in admin page
 
 ## How to use
+- HScode
 ```python
-from dsm_master.hscode.models import HScode
+from dsm_django_masterdata.hscode.models import HScode
 hs_code = HScode.objects.all()
+```
+- Area
+```python
+from dsm_django_masterdata.area.models import Area
+area = Area.objects.all()
 ```
