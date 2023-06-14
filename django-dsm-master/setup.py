@@ -17,7 +17,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='dsm_django_masterdata',
-    version='0.0.3',
+    version=get_version(),
     url='https://github.com/storemesh/masterdata/tree/django-app',
     packages=find_packages(),
     include_package_data=True,
